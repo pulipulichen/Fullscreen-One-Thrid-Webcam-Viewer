@@ -1,0 +1,38 @@
+.Index {
+  overflow: hidden !important;
+  height: 100vh !important;
+  line-height: normal !important; 
+
+  background-color: black !important;
+
+  color: white !important;
+
+  // @vote-column-width: 200px;
+  .video.column {
+    // width: calc(100vw - @vote-column-width) !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+  }
+
+  .vote.column {
+    //width: @vote-column-width !important;
+    position: fixed !important;
+    right: 0;
+    top: 0;
+  }
+
+  .webcam-video-row {
+    display: inline-block;
+    height: 100vh;
+    width: calc(50vw - 2px);
+
+    .webcam-video-vertical {
+      transform: rotate(90deg);
+      height: 720px !important;
+      width: 1280px !important;
+    }
+  }
+}
