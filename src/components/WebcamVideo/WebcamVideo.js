@@ -34,8 +34,8 @@ let app = {
       }
       else {
         return {
-          width: 1440 + 'px',
-          height: 900 + 'px',
+          width: 1400 + 'px',
+          height: 1050 + 'px',
         }
       }
     },
@@ -74,10 +74,10 @@ let app = {
         delete outputStyle.bottom
         delete outputStyle.left
 
-        outputStyle.top = "270px"
-        outputStyle.width = "1440px"
-        outputStyle.height = "900px"
-        outputStyle.right = "calc(50vw - 270px)"
+        outputStyle.top = "175px"
+        outputStyle.width = "1400px"
+        outputStyle.height = "1050px"
+        outputStyle.right = "calc(50vw - 170px)"
       }
 
 
@@ -123,11 +123,11 @@ let app = {
       try {
         let constraints = JSON.parse(JSON.stringify(this.db.config.videoConstraints))
         if (this.input_id === '0') {
-          constraints.video.width = 1440
-          this.width = 1440
-          constraints.video.height = 900
+          constraints.video.width = 1400
+          this.width = 1400
+          constraints.video.height = 1050
           delete constraints.video.frameRate
-          this.height = 900
+          this.height = 1050
         }
 
         constraints.video.deviceId = deviceId
