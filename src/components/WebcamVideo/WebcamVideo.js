@@ -1,3 +1,6 @@
+let verticalHeight = 768
+let verticalWidth = 1024
+
 let app = {
   props: ['db', 'input_id', 'right', 'top', 'vertical', ],
   components: {
@@ -34,8 +37,8 @@ let app = {
       }
       else {
         return {
-          width: 1400 + 'px',
-          height: 1050 + 'px',
+          width: verticalWidth + 'px',
+          height: verticalHeight + 'px',
         }
       }
     },
@@ -74,10 +77,10 @@ let app = {
         delete outputStyle.bottom
         delete outputStyle.left
 
-        outputStyle.top = "175px"
-        outputStyle.width = "1400px"
-        outputStyle.height = "1050px"
-        outputStyle.right = "calc(50vw - 170px)"
+        outputStyle.top = ((verticalWidth - verticalHeight) / 2) + "px"
+        outputStyle.width = verticalWidth + "px"
+        outputStyle.height = verticalHeight + "px"
+        outputStyle.right = "calc(50vw - " + ((verticalWidth - verticalHeight) / 2) + "px)"
       }
 
 
@@ -123,11 +126,11 @@ let app = {
       try {
         let constraints = JSON.parse(JSON.stringify(this.db.config.videoConstraints))
         if (this.input_id === '0') {
-          constraints.video.width = 1400
-          this.width = 1400
-          constraints.video.height = 1050
-          delete constraints.video.frameRate
-          this.height = 1050
+          constraints.video.width = verticalWidth
+          this.width = verticalWidth
+          constraints.video.height = verticalHeight
+          // delete constraints.video.frameRate
+          this.height = verticalHeight
         }
 
         constraints.video.deviceId = deviceId
