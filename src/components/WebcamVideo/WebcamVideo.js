@@ -1,5 +1,5 @@
-let verticalWidth = 1440
-let verticalHeight = 900
+let verticalWidth = 1280
+let verticalHeight = 720
 
 
 let app = {
