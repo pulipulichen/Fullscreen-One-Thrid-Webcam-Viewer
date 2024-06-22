@@ -26,9 +26,17 @@ let app = {
   },
   computed: {
     computedStyle () {
-      return {
-        width: this.width + 'px',
-        height: this.height + 'px',
+      if (this.input_id !== '0') {
+        return {
+          width: this.width + 'px',
+          height: this.height + 'px',
+        }
+      }
+      else {
+        return {
+          width: 1440 + 'px',
+          height: 900 + 'px',
+        }
       }
     },
     computedVideoClass () {
