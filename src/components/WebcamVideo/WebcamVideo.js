@@ -126,6 +126,7 @@ let app = {
           constraints.video.width = 1440
           this.width = 1440
           constraints.video.height = 900
+          delete constraints.video.frameRate
           this.height = 900
         }
 
