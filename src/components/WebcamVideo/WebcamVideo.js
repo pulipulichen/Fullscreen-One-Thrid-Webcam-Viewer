@@ -1,5 +1,6 @@
-let verticalHeight = 768
-let verticalWidth = 1024
+let verticalWidth = 1440
+let verticalHeight = 900
+
 
 let app = {
   props: ['db', 'input_id', 'right', 'top', 'vertical', ],
