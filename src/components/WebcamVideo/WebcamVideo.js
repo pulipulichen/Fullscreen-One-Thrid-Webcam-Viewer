@@ -66,10 +66,10 @@ let app = {
         delete outputStyle.bottom
         delete outputStyle.left
 
-        outputStyle.top = "280px"
-        outputStyle.width = "1280px"
-        outputStyle.height = "720px"
-        outputStyle.right = "calc(50vw - 280px)"
+        outputStyle.top = "270px"
+        outputStyle.width = "1440px"
+        outputStyle.height = "900px"
+        outputStyle.right = "calc(50vw - 270px)"
       }
 
 

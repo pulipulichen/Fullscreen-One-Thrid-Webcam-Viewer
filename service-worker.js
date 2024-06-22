@@ -16,7 +16,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v20240622-075238';
+const PRECACHE = 'precache-v20240622-084112';
 const RUNTIME = 'runtime';
 
 /**
@@ -102,19 +102,6 @@ const PRECACHE_URLS = [
   "assets/favicon/generator/ms-icon-150x150.png",
   "assets/favicon/generator/ms-icon-310x310.png",
   "assets/favicon/generator/ms-icon-70x70.png",
-  "assets/nic-drivers/Linux/AX88179_178A_LINUX_DRIVER_v1.20.0_SOURCE.tar.bz2",
-  "assets/nic-drivers/macos/ASIX_USB_Device_Installer_macOS_11.0_above_Driver_v1.2.0.zip",
-  "assets/nic-drivers/macos/ASIX_USB_Device_Installer_macOS_11.3_to11.6_Driver_v1.3.0.zip",
-  "assets/nic-drivers/macos/ASIX_USB_Device_Installer_macOS_12_Driver_v2.1.0.zip",
-  "assets/nic-drivers/macos/AX88179_178A_macOS_10.9_to_10.15_Driver_Installer_v2.19.0.zip",
-  "assets/nic-drivers/windows/Windows 10/AX88179x_178A_772D_Win10_v2.20.8.0_Drivers_Setup_v1.0.10.0.zip",
-  "assets/nic-drivers/windows/Windows 11/AX88179x_178A_772D_Win11_v2.22.3.0_Drivers_Setup_v1.0.1.0.zip",
-  "assets/nic-drivers/windows/Windows 7/AX88179_178A_Win7_v1.x.11.0_Drivers_Setup_v3.0.6.0.zip",
-  "assets/nic-drivers/windows/Windows 8/AX88179_178A_Win8.x_v1.18.5.0_Drivers_Setup_v1.0.4.0.zip",
-  "assets/nic-drivers/windows/Windows XP_Vista/AX88179_178A_WinXP_Vista_v1.x.2.0_Drivers_Setup_v1.0.4.0.zip",
-  "assets/setup-hotspot.ps1",
-  "assets/setup.bat",
-  "assets/share-network.ps1",
   "index.html",
   "manifest.json",
   "service-worker.js"
