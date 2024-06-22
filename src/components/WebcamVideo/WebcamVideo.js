@@ -43,7 +43,7 @@ let app = {
     computedWebcamStyle () {
       // let inputID = Number(this.input_id)
 
-      // if (inputID % 2 === 1) {
+      // if (inputID % 2 === 1) {1
       //   return {right: 0}
       // }
       let outputStyle = {}
@@ -116,7 +116,9 @@ let app = {
         let constraints = JSON.parse(JSON.stringify(this.db.config.videoConstraints))
         if (this.input_id === '0') {
           constraints.video.width = 1440
+          this.width = 1440
           constraints.video.height = 900
+          this.height = 900
         }
 
         constraints.video.deviceId = deviceId
